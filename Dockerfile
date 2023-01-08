@@ -1,4 +1,4 @@
-ARG VER=latest
+ARG VER=kde-latest
 FROM ramirezfx/opensuse-tumbletweet-iso:$VER
 ENV SHELL=/bin/bash
 
