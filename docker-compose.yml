@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mate-desktop:
+    security_opt:
+    - seccomp:unconfined
+    shm_size: "2gb"
+    environment:
+    - USER={{ USERNAME }}
+    - PASSWORD={{ PASSWORD }}
+    - TZ={{ TIMEZONE }}
+    cap_add:
+    - SYS_PTRACE
+    image: ramirezfx/opensuse-tumbletweet-desktop:{{ VERSION }}
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+    - {{ NOMACHINE_PORT }}:4000
