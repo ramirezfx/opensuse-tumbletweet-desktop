@@ -1,5 +1,5 @@
-ARG VER=kde-latest
-FROM ramirezfx/opensuse-tumbletweet-iso:$VER
+ARG VER=kde-latest-en
+FROM ramirezfx/opensuse-tumbletweed-baseimage:$VER
 ENV SHELL=/bin/bash
 
 RUN zypper -n --no-gpg-checks rm wireplumber-audio pipewire-pulseaudio
