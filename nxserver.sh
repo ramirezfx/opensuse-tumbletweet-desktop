@@ -2,7 +2,6 @@
 
 usermod -l $USER opensuse
 groupmod -n $USER opensuse
-echo $USER':'$PASSWORD | chpasswd
 
 mv /home/opensuse /home/$USER
 
