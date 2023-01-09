@@ -1,5 +1,5 @@
 ARG VER=kde-latest-en
-FROM ramirezfx/opensuse-tumbletweed-baseimage:$VER
+FROM ramirezfx/opensuse-tumbleweed-baseimage:$VER
 ENV SHELL=/bin/bash
 
 RUN zypper -n --no-gpg-checks rm wireplumber-audio pipewire-pulseaudio
