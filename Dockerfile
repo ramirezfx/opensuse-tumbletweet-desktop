@@ -1,4 +1,4 @@
-ARG VER=kde-latest-en
+ARG VER=kde-latest
 FROM ramirezfx/opensuse-tumbleweed-baseimage:$VER
 ENV SHELL=/bin/bash
 
