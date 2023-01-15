@@ -1,3 +1,6 @@
+# Add Language-Support:
+wget -O /tmp/languages.txt https://github.com/ramirezfx/opensuse-tumbleweed-desktop/raw/main/languages.txt && xargs -a /tmp/languages.txt zypper -n --no-gpg-checks in
+
 # Install Seafile-Cloud-Sync-Client
 # ---------------------------------
 zypper -n in seafile-client
