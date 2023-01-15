@@ -16,6 +16,6 @@ RUN wget -O /custom.sh https://raw.githubusercontent.com/ramirezfx/opensuse-tumb
 RUN /custom.sh
 
 # Add Language-Support:
-RUN wget -O /tmp/languages.txt https://github.com/ramirezfx/xubuntu-desktop/raw/main/languages.txt && xargs -a /tmp/languages.txt zypper -n --no-gpg-checks in
+RUN wget -O /tmp/languages.txt https://github.com/ramirezfx/opensuse-tumbleweed-desktop/raw/main/languages.txt && xargs -a /tmp/languages.txt zypper -n --no-gpg-checks in
 
 ENTRYPOINT ["/nxserver.sh"]
