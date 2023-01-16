@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Add Language-Support:
+# Add Language-Support
 CURRWINMANAGER=$(echo $XDG_CURRENT_DESKTOP)
 if [ CURRWINMANAGER == 'kde' ]
 then
