@@ -10,7 +10,7 @@ services:
     - TZ={{ TIMEZONE }}
     cap_add:
     - SYS_PTRACE
-    image: ramirezfx/opensuse-tumbleweed-desktop-kde:{{ VERSION }}
+    image: ramirezfx/opensuse-tumbleweed-kde-desktop:{{ VERSION }}
     restart: always
     stdin_open: true
     tty: true
