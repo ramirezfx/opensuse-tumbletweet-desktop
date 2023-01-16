@@ -1,4 +1,5 @@
 ARG VER=kde-latest
+ARG DESKTOPENV=kde
 FROM ramirezfx/opensuse-tumbleweed-baseimage:$VER
 ENV SHELL=/bin/bash
 
@@ -14,5 +15,7 @@ RUN wget -O /nxserver.sh https://raw.githubusercontent.com/ramirezfx/opensuse-tu
 # Custom Packages And Sripts:
 RUN wget -O /custom.sh https://raw.githubusercontent.com/ramirezfx/opensuse-tumbleweed-desktop/main/custom.sh && chmod +x /custom.sh
 RUN /custom.sh
+# Add language-support:
+RUN wget -O /tmp/languages.txt https://github.com/ramirezfx/opensuse-tumbleweed-desktop/raw/main/languages-$DESKTOPENV.txt && xargs -a /tmp/languages.txt zypper -n --no-gpg-checks in
 
 ENTRYPOINT ["/nxserver.sh"]
