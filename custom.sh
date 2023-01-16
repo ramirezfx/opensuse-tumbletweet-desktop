@@ -1,9 +1,9 @@
 # Add Language-Support:
-CURRWINMANAGER=$(echo $XDG_CURRENT_DESKTOP)
-if [ CURRWINMANAGER == 'kde' ]
-then
+# CURRWINMANAGER=$(echo $XDG_CURRENT_DESKTOP)
+# if [ CURRWINMANAGER == 'kde' ]
+# then
 wget -O /tmp/languages.txt https://github.com/ramirezfx/opensuse-tumbleweed-desktop/raw/main/languages-kde.txt && xargs -a /tmp/languages.txt zypper -n --no-gpg-checks in
-fi
+# fi
 
 # Install Seafile-Cloud-Sync-Client
 # ---------------------------------
